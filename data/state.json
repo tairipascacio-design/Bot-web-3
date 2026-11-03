@@ -1,0 +1,41 @@
+{
+  "on": false,
+  "pos": null,
+  "hist": [],
+  "cfg": {
+    "ba": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    "qa": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "rt": "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
+    "qt": "0x61fFE014bA17989E743c5F6cB21bF9697530B21e",
+    "fee": 3000,
+    "size": 2,
+    "slip": 0.5,
+    "every": 8,
+    "mode": "rules",
+    "thr": 0.25,
+    "tp": 2.5,
+    "sl": 1.2,
+    "conf": 0.75,
+    "ap": "exact",
+    "aiEvery": 30,
+    "simulationMode": false,
+    "futuresEnabled": true,
+    "pair": "BTC/USDT",
+    "leverage": 10,
+    "margin": 2,
+    "marginType": "isolated",
+    "trailingStopPct": 0.8,
+    "autoDeleverage": true
+  },
+  "sunshineVault": {
+    "address": "0x60acE2c469d9467832134bdaC1D67016A69B03E9",
+    "ethBalance": 0.0005,
+    "usdtBalance": 8.3868,
+    "usdcBalance": 0,
+    "totalDeposited": 9.52,
+    "totalWithdrawn": 0,
+    "accumulatedProfit": 0,
+    "lastDepositTs": 1730650000000,
+    "lastDepositAmt": 8.38
+  }
+}

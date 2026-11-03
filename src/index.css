@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #05070c;
+    color: #d1d5db;
+    font-family: 'JetBrains Mono', monospace;
+    overflow-x: hidden;
+  }
+}
+
+/* Cyberpunk Glows & Utility Shadows */
+.glow-cyan {
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.65), 0 0 20px rgba(6, 182, 212, 0.3);
+}
+
+.glow-green {
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.7), 0 0 20px rgba(34, 197, 94, 0.35);
+}
+
+.glow-red {
+  text-shadow: 0 0 10px rgba(239, 68, 68, 0.75), 0 0 20px rgba(239, 68, 68, 0.4);
+}
+
+.glow-amber {
+  text-shadow: 0 0 10px rgba(245, 158, 11, 0.7), 0 0 20px rgba(245, 158, 11, 0.35);
+}
+
+.glow-purple {
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.7), 0 0 20px rgba(168, 85, 247, 0.35);
+}
+
+.box-glow-cyan {
+  box-shadow: 0 0 15px -3px rgba(6, 182, 212, 0.25), inset 0 0 15px -5px rgba(6, 182, 212, 0.1);
+}
+
+.box-glow-green {
+  box-shadow: 0 0 15px -3px rgba(34, 197, 94, 0.3), inset 0 0 15px -5px rgba(34, 197, 94, 0.1);
+}
+
+.box-glow-red {
+  box-shadow: 0 0 20px -3px rgba(239, 68, 68, 0.35), inset 0 0 20px -5px rgba(239, 68, 68, 0.15);
+}
+
+/* Background Cyber Grid */
+.cyber-grid {
+  background-image: 
+    linear-gradient(to right, rgba(30, 41, 59, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 41, 59, 0.3) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Subtle CRT Scanlines */
+.scanline {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+/* Custom Cyber Terminal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9;
+}
+
+/* Pulse animation for active node indicator */
+@keyframes cyberPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.96); }
+}
+
+.animate-cyber-pulse {
+  animation: cyberPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

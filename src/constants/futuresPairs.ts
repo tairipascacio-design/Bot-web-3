@@ -1,0 +1,58 @@
+import { FuturesPairInfo } from '../types';
+
+export const FUTURES_PAIRS: FuturesPairInfo[] = [
+  {
+    symbol: 'BTC/USDT',
+    base: 'BTC',
+    quote: 'USDT',
+    maxLeverage: 100,
+    minMargin: 1,
+    defaultPrice: 94850.0,
+    pricePrecision: 2,
+  },
+  {
+    symbol: 'ETH/USDT',
+    base: 'ETH',
+    quote: 'USDT',
+    maxLeverage: 75,
+    minMargin: 1,
+    defaultPrice: 3180.5,
+    pricePrecision: 2,
+  },
+  {
+    symbol: 'SOL/USDT',
+    base: 'SOL',
+    quote: 'USDT',
+    maxLeverage: 50,
+    minMargin: 1,
+    defaultPrice: 198.4,
+    pricePrecision: 2,
+  },
+  {
+    symbol: 'BNB/USDT',
+    base: 'BNB',
+    quote: 'USDT',
+    maxLeverage: 50,
+    minMargin: 1,
+    defaultPrice: 654.2,
+    pricePrecision: 2,
+  },
+  {
+    symbol: 'PEPE/USDT',
+    base: 'PEPE',
+    quote: 'USDT',
+    maxLeverage: 25,
+    minMargin: 1,
+    defaultPrice: 0.0000184,
+    pricePrecision: 8,
+  },
+  {
+    symbol: 'DOGE/USDT',
+    base: 'DOGE',
+    quote: 'USDT',
+    maxLeverage: 50,
+    minMargin: 1,
+    defaultPrice: 0.285,
+    pricePrecision: 4,
+  },
+];

@@ -1,0 +1,6 @@
+{
+  "name": "NEON GHOST // On-Chain Autopilot & Web3 Terminal",
+  "description": "Autonomous Uniswap V3 on-chain trading autopilot, AI strategy learning engine, momentum & TP/SL execution, and cyberpunk Web3 terminal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

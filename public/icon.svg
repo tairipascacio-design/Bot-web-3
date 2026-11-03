@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="108" fill="#05070c"/>
+  <defs>
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Cyber Background Grid Circles -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#0e1726" stroke-width="3" stroke-dasharray="10 10"/>
+  <circle cx="256" cy="256" r="130" fill="none" stroke="#1e293b" stroke-width="2"/>
+  
+  <!-- Ghost Skull Icon Silhouette -->
+  <path d="M160 170 C160 100, 352 100, 352 170 C352 230, 330 260, 310 280 L310 330 L202 330 L202 280 C182 260, 160 230, 160 170 Z" fill="none" stroke="url(#neonGlow)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  
+  <!-- Neon Eyes -->
+  <circle cx="216" cy="180" r="22" fill="#06b6d4" filter="url(#glow)"/>
+  <circle cx="296" cy="180" r="22" fill="#06b6d4" filter="url(#glow)"/>
+  <circle cx="216" cy="180" r="10" fill="#ffffff"/>
+  <circle cx="296" cy="180" r="10" fill="#ffffff"/>
+
+  <!-- Lightning Bolt -->
+  <polygon points="256,220 236,270 266,270 246,320 286,260 256,260" fill="#f59e0b" filter="url(#glow)"/>
+  
+  <!-- Teeth Matrix -->
+  <line x1="225" y1="310" x2="225" y2="330" stroke="#06b6d4" stroke-width="8" stroke-linecap="round"/>
+  <line x1="256" y1="310" x2="256" y2="330" stroke="#38bdf8" stroke-width="8" stroke-linecap="round"/>
+  <line x1="287" y1="310" x2="287" y2="330" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Cyber Text -->
+  <text x="256" y="420" font-family="'Orbitron', monospace, sans-serif" font-weight="900" font-size="38" fill="#38bdf8" text-anchor="middle" letter-spacing="8" filter="url(#glow)">NEON GHOST</text>
+  <text x="256" y="456" font-family="monospace" font-weight="700" font-size="18" fill="#f59e0b" text-anchor="middle" letter-spacing="4">FUTURES // REAL</text>
+</svg>
